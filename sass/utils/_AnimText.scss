@@ -4,32 +4,10 @@
     transition: all 1s ease 0s;
 }
 
-//     transform: translate(0%, -100%);
-//     opacity: 0;
-//     transition: all 1s ease 0s;
-
-// .HeaderIndividual,
-// .HeaderEntity {
-//     transform: translate(0%, -100%);
-//     opacity: 0;
-//     transition: all 1s ease 0s;
-// }
-
 .HeaderList,
 .headerNavMenu,
 .HeaderLang {
     transform: translate(0%, -50%);
-    opacity: 0;
-    transition: all 1s ease 0s;
-}
-
-.mainGeneralText {
-    transform: translate(60%, 0%);
-    opacity: 0;
-    transition: all 1s ease 0s;
-}
-.mainGeneralImg {
-    transform: translate(-60%, 0%);
     opacity: 0;
     transition: all 1s ease 0s;
 }
