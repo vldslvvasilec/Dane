@@ -251,6 +251,7 @@ a {
   border-radius: calc(var(--index));
   visibility: hidden;
   opacity: 0;
+  z-index: 999;
 }
 
 .headerNavMenuList li {
@@ -989,22 +990,6 @@ a {
 .HeaderLang {
   -webkit-transform: translate(0%, -50%);
           transform: translate(0%, -50%);
-  opacity: 0;
-  -webkit-transition: all 1s ease 0s;
-  transition: all 1s ease 0s;
-}
-
-.mainGeneralText {
-  -webkit-transform: translate(60%, 0%);
-          transform: translate(60%, 0%);
-  opacity: 0;
-  -webkit-transition: all 1s ease 0s;
-  transition: all 1s ease 0s;
-}
-
-.mainGeneralImg {
-  -webkit-transform: translate(-60%, 0%);
-          transform: translate(-60%, 0%);
   opacity: 0;
   -webkit-transition: all 1s ease 0s;
   transition: all 1s ease 0s;
