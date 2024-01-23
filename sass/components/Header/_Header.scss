@@ -1,0 +1,22 @@
+@import "./components/HeaderTitleBg";
+@import "./components/HeaderList";
+@import "./components/HeaderLang";
+@import "./components/HeaderNav";
+
+.HeaderGeneralWrap {
+    display: flex;
+    justify-content: center;
+    padding-top: calc(var(--index) * 0.3);
+    background-color: var(--colorBg);
+}
+
+.HeaderGeneral {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+}
+
+.HeaderEntity {
+    display: none;
+}

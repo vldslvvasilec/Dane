@@ -1,0 +1,46 @@
+.mainGeneral {
+    display: flex;
+    justify-content: center;
+    font-family: var(--fontPoppins);
+    width: 90%;
+    margin-top: calc(var(--index)*2);
+}
+
+.mainGeneralText,
+.mainGeneralImg {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.mainGeneralText {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+    margin-right: 5%;
+
+}
+
+.lsgMainGeneralTextTitle {
+    color: var(--colorBlue);
+    font-size: calc(var(--index)*1.7);
+    margin-bottom: calc(var(--index)*1.5);
+    text-align: center;
+}
+
+.lsgMainGeneralTextContent {
+    color: var(--cololBlack);
+    text-align: center;
+    font-size: calc(var(--index)*1.3);
+}
+
+.mainGeneralImg {
+    padding: 0;
+    width: 50%;
+
+    img {
+        width: 100%;
+        border-radius: calc(var(--index));
+    }
+}

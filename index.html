@@ -1,0 +1,652 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+            rel="stylesheet" />
+        <link rel="stylesheet" href="./css/index.min.css" />
+        <title>Document</title>
+    </head>
+    <body>
+        <div id="root">
+            <header>
+                <div class="Header">
+                    <section class="HeaderTitleWrap">
+                        <section class="HeaderBg">
+                            <img src="./assets/icons/CZ.png" class="Img" />
+                            <img src="./assets/icons/UA.png" class="Img" />
+                        </section>
+                        <section class="_animItems HeaderTitle">
+                            <p class="lsg_header_title">Налоговая декларация</p>
+                        </section>
+                    </section>
+                    <section class="HeaderGeneralWrap">
+                        <section class="HeaderGeneral">
+                            <section class="_animItems HeaderList">
+                                <section class="HeaderIndividual">
+                                    Физическое лицо
+                                </section>
+                                <section class="HeaderEntity">
+                                    Юридическое лицо
+                                </section>
+                            </section>
+                            <section class="_animItems headerNavMenu">
+                                <section class="headerNavMenuBtn">
+                                    <svg
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        height="24"
+                                        viewBox="0 -960 960 960"
+                                        width="24">
+                                        <path
+                                            d="M120-680v-80h720v80H120Zm0 480v-80h720v80H120Zm0-240v-80h720v80H120Z" />
+                                    </svg>
+                                </section>
+                                <section class="headerNavMenuMenu">
+                                    <ul class="headerNavMenuList">
+                                        <li class="headerNavMenuHome">
+                                            <a
+                                                href="#HomePage"
+                                                class="submenu-items headerNavMenuHomeSp"
+                                                onclick="scrollToAnchor(event)"
+                                                >Главна</a
+                                            >
+                                        </li>
+                                        <li class="headerNavMenuFunctionality">
+                                            <a
+                                                href="#FunctionPage"
+                                                class="submenu-items headerNavMenuFunctionalitySp"
+                                                onclick="scrollToAnchor(event)"
+                                                >Функциональность</a
+                                            >
+                                        </li>
+                                        <li class="headerNavMenuDocuments">
+                                            <a
+                                                href="#DocumentsPage"
+                                                class="submenu-items headerNavMenuDocumentsSp"
+                                                onclick="scrollToAnchor(event)"
+                                                >Документы</a
+                                            >
+                                        </li>
+                                        <li class="headerNavMenuPrice">
+                                            <a
+                                                href="#PricePage"
+                                                class="submenu-items headerNavMenuPriceSp"
+                                                onclick="scrollToAnchor(event)"
+                                                >Цены</a
+                                            >
+                                        </li>
+                                        <li class="headerNavMenuContacts">
+                                            <a href="#ContactsPage" class="submenu-items headerNavMenuContactsSp" onclick="scrollToAnchor(event)">Контакты</a>
+                                        </li>                                        
+                                        <li class="headerNavMenuOrder">
+                                            <a
+                                                href="#CalculationTegPage"
+                                                class="submenu-items headerNavMenuOrderSp"
+                                                onclick="scrollToAnchor(event)"
+                                                >Заказ</a
+                                            >
+                                        </li>
+                                    </ul>
+                                </section>
+                            </section>
+                            <section class="_animItems HeaderLang">
+                                <section class="langBar">
+                                    <section class="drop-down-btn">
+                                        <svg
+                                            id="LangArrow"
+                                            xmlns="http://www.w3.org/2000/svg"
+                                            viewBox="0 -960 960 960">
+                                            <path
+                                                d="M480-345 240-585l56-56 184 184 184-184 56 56-240 240Z" />
+                                        </svg>
+                                        <img
+                                            src="./assets/icons/CZ.png"
+                                            alt="CZ"
+                                            id="LangBtnImg"
+                                            class="language-img" />
+                                        <h3
+                                            id="LangBtnTitle"
+                                            class="language-title">
+                                            CZ
+                                        </h3>
+                                    </section>
+                                    <ul class="language-menu">
+                                        <li
+                                            class="language-item"
+                                            data-lang="cz">
+                                            <img
+                                                src="./assets/icons/CZ.png"
+                                                alt="CZ"
+                                                class="language-img" />
+                                            <h3 class="ListLanguage-title">
+                                                CZ
+                                            </h3>
+                                        </li>
+                                        <li
+                                            class="language-item"
+                                            data-lang="ua">
+                                            <img
+                                                src="./assets/icons/UA.png"
+                                                alt="UA"
+                                                class="language-img" />
+                                            <h3 class="ListLanguage-title">
+                                                UA
+                                            </h3>
+                                        </li>
+                                    </ul>
+                                </section>
+                            </section>
+                        </section>
+                    </section>
+                </div>
+            </header>
+            <main class="Main">
+                <section class="mainWrap">
+                    <section id="HomePage" class="mainGeneral">
+                        <section class="_animItems mainGeneralText">
+                            <span class="lsgMainGeneralTextTitle"></span
+                            ><span class="lsgMainGeneralTextContent"></span>
+                        </section>
+                        <section class="_animItems mainGeneralImg">
+                            <img src="./assets//images/mainTitle.jpg" />
+                        </section>
+                    </section>
+                    <section id="FunctionPage" class="functions">
+                        <p class="_animItems lsgFunctionsTitle">Как это работает</p>
+                        <section class="functionsContent">
+                            <section class="_animItems functionContentCards1">
+                                <section class="functionContentCardsImg">
+                                    <svg
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        height="24"
+                                        viewBox="0 -960 960 960"
+                                        width="24">
+                                        <path
+                                            d="M200-120q-33 0-56.5-23.5T120-200v-560q0-33 23.5-56.5T200-840h357l-80 80H200v560h560v-278l80-80v358q0 33-23.5 56.5T760-120H200Zm280-360ZM360-360v-170l367-367q12-12 27-18t30-6q16 0 30.5 6t26.5 18l56 57q11 12 17 26.5t6 29.5q0 15-5.5 29.5T897-728L530-360H360Zm481-424-56-56 56 56ZM440-440h56l232-232-28-28-29-28-231 231v57Zm260-260-29-28 29 28 28 28-28-28Z" />
+                                    </svg>
+                                </section>
+                                <section class="functionContentCardsText">
+                                    <p class="lsgFunctionCardsTextFilling">
+                                        <span
+                                            class="lsgFunctionCardsTextFillingTitle"></span
+                                        ><span
+                                            class="lsgFunctionCardsTextFillingContent"></span>
+                                    </p>
+                                </section>
+                            </section>
+                            <section class="_animItems functionContentCards2">
+                                <section class="functionContentCardsImg">
+                                    <svg
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        height="24"
+                                        viewBox="0 -960 960 960"
+                                        width="24">
+                                        <path
+                                            d="m720-120 160-160-56-56-64 64v-167h-80v167l-64-64-56 56 160 160ZM560 0v-80h320V0H560ZM240-160q-33 0-56.5-23.5T160-240v-560q0-33 23.5-56.5T240-880h280l240 240v121h-80v-81H480v-200H240v560h240v80H240Zm0-80v-560 560Z" />
+                                    </svg>
+                                </section>
+                                <section class="functionContentCardsText">
+                                    <p class="lsgFunctionCardsTextDownload">
+                                        <span
+                                            class="lsgFunctionCardsTextDownloadTitle"></span>
+                                        <span
+                                            class="lsgFunctionCardsTextDownloadContent"></span>
+                                    </p>
+                                </section>
+                            </section>
+                            <section class="_animItems functionContentCards3">
+                                <section class="functionContentCardsImg">
+                                    <svg
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        height="24"
+                                        viewBox="0 -960 960 960"
+                                        width="24">
+                                        <path
+                                            d="m720-160-56-56 63-64H560v-80h167l-63-64 56-56 160 160-160 160ZM160-280q-33 0-56.5-23.5T80-360v-400q0-33 23.5-56.5T160-840h520q33 0 56.5 23.5T760-760v204q-10-2-20-3t-20-1q-10 0-20 .5t-20 2.5v-147L416-520 160-703v343h323q-2 10-2.5 20t-.5 20q0 10 1 20t3 20H160Zm58-480 198 142 204-142H218Zm-58 400v-400 400Z" />
+                                    </svg>
+                                </section>
+                                <section class="functionContentCardsText">
+                                    <p class="lsgFunctionCardsTextSending">
+                                        <span
+                                            class="lsgFunctionCardsTextSendingTitile"></span
+                                        ><span
+                                            class="lsgFunctionCardsTextSendingContent"></span>
+                                    </p>
+                                </section>
+                            </section>
+                        </section>
+                    </section>
+                    <section class="_animItems calculationTeg">
+                        <span class="calculationTegText"
+                            >Перейти к расчету</span
+                        >
+                    </section>
+                    <section id="DocumentsPage" class="documents">
+                        <p class="_animItems lsgDocumentsTitle">
+                            Какие документы приложить к годовому налоговому
+                            расчету и налоговой декларации?
+                        </p>
+                        <section class="_animItems documentsDetail">
+                            <ul class="_animItems documentsDetailsListFirst">
+                                <p class="documentsDetailsListTitle1">
+                                    Из налоговой базы можно вычесть следующие
+                                    статьи, подлежащие вычету:
+                                </p>
+                                <li class="documentsDetailsItem">
+                                    <span
+                                        class="documentsDetailsMartgage"
+                                        onclick="toggleDocumentMenu('.documentsDetailsDocumentsMartgage')"
+                                        >Проценты по ипотеке</span
+                                    >
+                                    <ul
+                                        class="documentsDetailsDocumentsMartgage">
+                                        <li>
+                                            <span
+                                                class="documentsDetailsDocumentsMartgage1"
+                                                >подтверждение предоставленного
+                                                кредита на жилищные нужды и
+                                                суммы процентов, уплаченных по
+                                                этому кредиту</span
+                                            >
+                                        </li>
+                                        <li>
+                                            <span
+                                                class="documentsDetailsDocumentsMartgage2"
+                                                >вы должны быть в состоянии
+                                                доказать, что используете
+                                                недвижимость для
+                                                проживания</span
+                                            >
+                                        </li>
+                                        <li>
+                                            <span
+                                                class="documentsDetailsDocumentsMartgage3"
+                                                >договор ипотечного
+                                                кредита</span
+                                            >
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="documentsDetailsItem">
+                                    <span
+                                        class="documentsDetailsInsurance"
+                                        onclick="toggleDocumentMenu('.documentsDetailsDocumentsInsurance')"
+                                        >Страхование жизни</span
+                                    >
+                                    <ul
+                                        class="documentsDetailsDocumentsInsurance">
+                                        <li>
+                                            <span
+                                                class="documentsDetailsDocumentsInsurance1"
+                                                >подтверждение выплаченных сумм
+                                                по личному страхованию
+                                                жизни</span
+                                            >
+                                        </li>
+                                        <li>
+                                            <span
+                                                class="documentsDetailsDocumentsInsurance2"
+                                                >договор страхования жизни</span
+                                            >
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="documentsDetailsItem">
+                                    <span
+                                        class="documentsDetailsPension"
+                                        onclick="toggleDocumentMenu('.documentsDetailsDocumentsPension')"
+                                        >Экономия на пенсию</span
+                                    >
+                                    <ul
+                                        class="documentsDetailsDocumentsPension">
+                                        <li>
+                                            <span
+                                                class="documentsDetailsDocumentsPension1"
+                                                >подтверждение уплаченных сумм
+                                                дополнительного пенсионного
+                                                страхования или пенсионного
+                                                страхования</span
+                                            >
+                                        </li>
+                                        <li>
+                                            <span
+                                                class="documentsDetailsDocumentsPension2"
+                                                >договор о заключении
+                                                дополнительного пенсионного
+                                                страхования или пенсионного
+                                                страхования</span
+                                            >
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="documentsDetailsItem">
+                                    <span
+                                        class="documentsDetailsGifts"
+                                        onclick="toggleDocumentMenu('.documentsDetailsDocumentsGifts')"
+                                        >Дары</span
+                                    >
+                                    <ul class="documentsDetailsDocumentsGifts">
+                                        <li>
+                                            <span
+                                                class="documentsDetailsDocumentsGifts1"
+                                                >если вы сдали кровь, костный
+                                                мозг или другие производные
+                                                крови бесплатно, вам необходимо
+                                                подтверждение из больницы о
+                                                сдаче крови</span
+                                            >
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="documentsDetailsItem">
+                                    <span
+                                        class="documentsDetailsUnion"
+                                        onclick="toggleDocumentMenu('.documentsDetailsDocumentsUnion')"
+                                        >Взносы Союза</span
+                                    >
+                                    <ul class="documentsDetailsDocumentsUnion">
+                                        <li>
+                                            <span
+                                                class="documentsDetailsDocumentsUnion1"
+                                                >подтверждение профсоюза об
+                                                уплаченных взносах</span
+                                            >
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="documentsDetailsItem">
+                                    <span
+                                        class="documentsDetailsExams"
+                                        onclick="toggleDocumentMenu('.documentsDetailsDocumentsExams')"
+                                        >Оплата экзаменов, подтверждающих
+                                        результаты дальнейшего образования</span
+                                    >
+                                    <ul class="documentsDetailsDocumentsExams">
+                                        <li>
+                                            <span
+                                                class="documentsDetailsDocumentsExams1"
+                                                >подтверждение оплаты экзаменов,
+                                                подтверждающих результаты
+                                                дальнейшего образования</span
+                                            >
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                            <ul class="_animItems documentsDetailsListSecond">
+                                <p class="documentsDetailsListTitle2">
+                                    Затем вы можете вычесть налоговую скидку из
+                                    рассчитанного налога:
+                                </p>
+                                <li class="documentsDetailsItem">
+                                    
+                                    <span
+                                        class="documentsDetailsTaxpayer"
+                                        onclick="toggleDocumentMenu('.documentsDetailsDocumentsTaxpayer')"
+                                        >Налогоплательщику</span
+                                    >
+                                    <ul
+                                        class="documentsDetailsDocumentsTaxpayer">
+                                        <li>
+                                            <span
+                                                class="documentsDetailsDocumentsTaxpayer1"
+                                                >Подтверждение дохода от
+                                                работодателя</span
+                                            >
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="documentsDetailsItem">
+                                    <span
+                                        class="documentsDetailsWife"
+                                        onclick="toggleDocumentMenu('.documentsDetailsDocumentsWife')"
+                                        >Жене/мужу</span
+                                    >
+                                    <ul class="documentsDetailsDocumentsWife">
+                                        <li>
+                                            <span
+                                                class="documentsDetailsDocumentsWife1"
+                                                >заверенное заявление
+                                                супруга</span
+                                            >
+                                        </li>
+                                        <li>
+                                            <span
+                                                class="documentsDetailsDocumentsWife2"
+                                                >копия документа,
+                                                удостоверяющего личность
+                                                супруга</span
+                                            >
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="documentsDetailsItem">
+                                    <span
+                                        class="documentsDetailsDisWife"
+                                        onclick="toggleDocumentMenu('.documentsDetailsDocumentsDisWife')"
+                                        >Для жены/мужа - держатель ZTP/P</span
+                                    >
+                                    <ul
+                                        class="documentsDetailsDocumentsDisWife">
+                                        <li>
+                                            <span
+                                                class="documentsDetailsDocumentsDisWife1"
+                                                >карта ZTP/P супруга</span
+                                            >
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="documentsDetailsItem">
+                                    <span
+                                        class="documentsDetailsDisPensioner"
+                                        onclick="toggleDocumentMenu('.documentsDetailsDocumentsDisPensioner')"
+                                        >Для пенсионеров-инвалидов</span
+                                    >
+                                    <ul
+                                        class="documentsDetailsDocumentsDisPensioner">
+                                        <li>
+                                            <span
+                                                class="documentsDetailsDocumentsDisPensioner1"
+                                                >копия заключения о назначении
+                                                пенсии по инвалидности</span
+                                            >
+                                        </li>
+                                        <li>
+                                            <span
+                                                class="documentsDetailsDocumentsDisPensioner2"
+                                                >подтверждение выплаты пенсии от
+                                                ČSSZ</span
+                                            >
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="documentsDetailsItem">
+                                    <span
+                                        class="documentsDetailsDisabled"
+                                        onclick="toggleDocumentMenu('.documentsDetailsDocumentsDisabled')"
+                                        >Для владельцев карт ZTP/P</span
+                                    >
+                                    <ul
+                                        class="documentsDetailsDocumentsDisabled">
+                                        <li>
+                                            <span
+                                                class="documentsDetailsDocumentsDisabled1"
+                                                >карта ZTP/P</span
+                                            >
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="documentsDetailsItem">
+                                    <span
+                                        class="documentsDetailsStudent"
+                                        onclick="toggleDocumentMenu('.documentsDetailsDocumentsStudent')"
+                                        >Студенту</span
+                                    >
+                                    <ul
+                                        class="documentsDetailsDocumentsStudent">
+                                        <li>
+                                            <span
+                                                class="documentsDetailsDocumentsStudent1"
+                                                >подтверждение обучения</span
+                                            >
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="documentsDetailsItem">
+                                    <span
+                                        class="documentsDetailsSchool"
+                                        onclick="toggleDocumentMenu('.documentsDetailsDocumentsSchool')"
+                                        >За школьные сборы</span
+                                    >
+                                    <ul class="documentsDetailsDocumentsSchool">
+                                        <li>
+                                            <span
+                                                class="documentsDetailsDocumentsSchool1"
+                                                >справка из детского сада об
+                                                уплаченной оплате за детский
+                                                сад</span
+                                            >
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="documentsDetailsItem">
+                                    <span
+                                        class="documentsDetailsChildren"
+                                        onclick="toggleDocumentMenu('.documentsDetailsDocumentsChildren')"
+                                        >Льготы для детей</span
+                                    >
+                                    <ul
+                                        class="documentsDetailsDocumentsChildren">
+                                        <li>
+                                            <span
+                                                class="documentsDetailsDocumentsChildren1"
+                                                >свидетельство о рождении</span
+                                            >
+                                        </li>
+                                        <li>
+                                            <span
+                                                class="documentsDetailsDocumentsChildren2"
+                                                >подтверждение об учебе</span
+                                            >
+                                        </li>
+                                        <li>
+                                            <span
+                                                class="documentsDetailsDocumentsChildren3"
+                                                >справка о неприменении
+                                                налоговой льготы на ребенка
+                                                другого налогоплательщика</span
+                                            >
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </section>
+                    </section>
+                    <section id="CalculationTegPage" class="_animItems calculationTeg">
+                        <span class="calculationTegText1"
+                            >Перейти к расчету</span
+                        >
+                    </section>
+                    <section id="PricePage" class="price">
+                        <p class="_animItems lsgPriceTitle">Стоимость наших услуг</p>
+                        <section class="priceContent">
+                            <section class="_animItems _anim-no-hide priceContentLow">
+                                <section class="priceSVG">
+                                <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path d="m296-345-56-56 240-240 240 240-56 56-184-183-184 183Z"/></svg>
+                                </section>
+                                <p class="priceContentCont">
+                                    <ul class="priceContentList">
+                                        <li class="priceContentItems"><span class="PriceContentTextTaxpayer"></span></li>
+                                    </ul>
+                                    
+                                </p>
+                                <p class="priceCena">350kč</p>
+                            </section>
+                            <section class="_animItems _anim-no-hide priceContentMedium">
+                                <section class="priceSVG">
+                                <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path d="m296-224-56-56 240-240 240 240-56 56-184-183-184 183Zm0-240-56-56 240-240 240 240-56 56-184-183-184 183Z"/></svg></section>
+                                <p class="priceContentCont">
+                                    <ul class="priceContentList">
+                                        <li class="priceContentItems"><span class="PriceContentTextWife">Жене/мужу</span></li>
+                                        <li class="priceContentItems"><span class="PriceContentTextDisWife">Для жены/мужа - держатель ZTP/P</span></li>
+                                        <li class="priceContentItems"><span class="PriceContentTextDisPensioner">Для пенсионеров-инвалидов</span></li>
+                                        <li class="priceContentItems"><span class="PriceContentTextDisabled">Для владельцев карт ZTP/P</span></li>
+                                        <li class="priceContentItems"><span class="PriceContentTextStudent">Студенту</span></li>
+                                        <li class="priceContentItems"><span class="PriceContentTextSchool">За школьные сборы</span></li>
+                                        <li class="priceContentItems"><span class="PriceContentTextChildren">Льготы для детей</span></li>
+                                    </ul>
+                                    
+                                </p>
+                                <p class="priceCena">500kč</p>
+                            </section>
+                            <section class="_animItems _anim-no-hide priceContentHigh">
+                                <section class="priceSVG">
+                                <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path d="m296-105-56-56 240-240 240 240-56 56-184-183-184 183Zm0-240-56-56 240-240 240 240-56 56-184-183-184 183Zm0-240-56-56 240-240 240 240-56 56-184-183-184 183Z"/></svg></section>
+                                <p class="priceContentCont">
+                                    <ul class="priceContentList">
+                                        <li class="priceContentItems"><span class="PriceContentTextMartgage">Проценты по ипотеке</span></li>
+                                        <li class="priceContentItems"><span class="PriceContentTextInsurance">Страхование жизни</span></li>
+                                        <li class="priceContentItems"><span class="PriceContentTextPension">Экономия на пенсию</span></li>
+                                        <li class="priceContentItems"><span class="PriceContentTextGifts">Дары</span></li>
+                                        <li class="priceContentItems"><span class="PriceContentTextUnion">Взносы Союза</span></li>
+                                        <li class="priceContentItems"><span class="PriceContentTextExams">Оплата экзаменов, подтверждающих
+                                        результаты дальнейшего образования</span></li>
+                                    </ul>
+                                    
+                                </p>
+                                <p class="priceCena">650kč</p>
+                            </section>
+                        </section>
+                    </section>
+                    <div id="ContactsPage" class="contacts">
+                        <p class="_animItems lsgContactsTitle">Если у вас есть вопросы, можете мне их задать, заполнив эту форму</p>
+                <form class="_animItems SendEmailForm">
+                    <label for="Name" class="labelName"
+                        ><span class="SendEmailName">Ваше имя</span></label
+                    ><input
+                        type="text"
+                        id="Name"
+                        name="name"
+                        class="name"
+                        required />
+                    <label for="email" class="labelEmail"
+                        ><span class="SendEmailEmail">Ваш Email</span></label
+                    ><input
+                        type="email"
+                        name="email"
+                        id="email"
+                        class="email"
+                        required /><label for="message" class="labelMessage"
+                        ><span class="SendEmailText"
+                            >Текст сообщения</span
+                        ></label
+                    ><textarea
+                        name="message"
+                        id="message"
+                        class="message"
+                        cols="50"
+                        rows="8"
+                        style="resize: none"
+                        required></textarea>
+                    <section class="EmailButtons">
+                        <button class="emailButtonsSubmitBut" type="submit">
+                            <span class="emailButtonsSubmit">Отправить</span>
+                        </button>
+                        <button class="emailButtonsCencelBut" type="button">
+                            <span class="SendEmailCancel">Отмена</span>
+                        </button>
+                    </section>
+                </form>
+            </div>
+                </section>
+            </main>
+            <footer class="Footer"><section class="footerContent"><a href="#HomePage" class="_animItems footerItems footerItemsHome" onclick="scrollToAnchor(event)">Главная</a><a href="#FunctionPage" class="_animItems footerItems footerItemsFunction" onclick="scrollToAnchor(event)">Функциональность</a><a href="#DocumentsPage" class="_animItems footerItems footerItemsDocuments" onclick="scrollToAnchor(event)">Документы</a><a href="#PricePage" class="_animItems footerItems footerItemsPrice" onclick="scrollToAnchor(event)">Цены</a><a href="#ContactsPage" class="_animItems footerItems footerItemsContacts" onclick="scrollToAnchor(event)">Контакты</a><a href="#CalculationTegPage" class="_animItems footerItems footerItemsCalculation" onclick="scrollToAnchor(event)">Заказ</a></section></footer>
+        </div>
+        <script src="./js/lang.js"></script>
+        <script src="./js/header.js"></script>
+        <script src="./js/documentsMenu.js"></script>
+        <script src="./js/styleText.js"></script>
+    </body>
+</html>

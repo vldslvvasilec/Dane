@@ -1,0 +1,30 @@
+.calculationTeg {
+    min-width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: var(--fontPoppins);
+    font-size: calc(var(--index) * 1.8);
+    font-weight: 600;
+    color: var(--colorBg);
+    background-color: var(--colorBlue);
+    border-radius: calc(var(--index) * 2);
+    padding: calc(var(--index));
+    margin-top: calc(var(--index) * 3);
+    margin-bottom: calc(var(--index));
+    cursor: pointer;
+    transition: 1.2s;
+
+    &:hover {
+        transform: scale(105%);
+        box-shadow: inset 0 0 calc(var(--index) * 0.8) var(--colorBg);
+    }
+}
+
+.calculationTegText,
+.calculationTegText1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}

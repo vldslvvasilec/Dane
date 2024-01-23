@@ -1,0 +1,60 @@
+.HeaderLang {
+    display: flex;
+    justify-content: center;
+}
+
+.langBar {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: flex-end;
+
+}
+
+.drop-down-btn {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    cursor: pointer;
+
+}
+
+#LangArrow {
+    width: calc(var(--index));
+    fill: var(--colorBlue);
+    transition: 0.5s;
+}
+
+#LangBtnImg,
+.language-img {
+    width: calc(var(--index)*1.5);
+    border-radius: calc(var(--index)*0.2);
+}
+
+#LangBtnTitle,
+.ListLanguage-title {
+    width: calc(var(--index));
+    font-family: var(--fontPoppins);
+    font-size: calc(var(--index)*0.8);
+    color: var(--colorBlue);
+    font-weight: 600;
+    margin-left: calc(var(--index)*0.3);
+}
+
+.language-menu {
+    position: absolute;
+    margin-top: calc(var(--index)*4);
+    display: none;
+    flex-direction: column;
+}
+
+.language-item {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+
+    &:last-child {
+        margin-top: calc(var(--index)*0.3);
+    }
+}
