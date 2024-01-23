@@ -289,9 +289,9 @@ if (LocationIndex) {
 }
 
 if (languageIndex) {
-    btnImg.src = `../assets/icons/${languageIndex}.png`;
+    btnImg.src = `./assets/icons/${languageIndex}.png`;
     btnTitle.innerHTML = languageIndex;
-} else btnImg.src = `../assets/icons/CZ.png`;
+} else btnImg.src = `./assets/icons/CZ.png`;
 
 for (var i = 0; i < langItems.length; i++) {
     var langItem = langItems[i];
@@ -299,7 +299,7 @@ for (var i = 0; i < langItems.length; i++) {
 }
 
 function changeLanguage(e) {
-    btnImg.src = "../assets/icons/" + this.dataset.lang + ".png";
+    btnImg.src = "./assets/icons/" + this.dataset.lang + ".png";
     btnTitle.innerText = this.dataset.lang;
     location.href = window.location.pathname + "#" + this.dataset.lang;
     location.reload();
