@@ -1094,6 +1094,44 @@ a {
   transition: all 1s ease 0s;
 }
 
+@media screen and (max-width: 660px) {
+  .functionContentCards1 {
+    -webkit-transform: translate(0%, 30%);
+            transform: translate(0%, 30%);
+  }
+  .functionContentCards2 {
+    -webkit-transform: translate(0%, 30%);
+            transform: translate(0%, 30%);
+  }
+  .functionContentCards3 {
+    -webkit-transform: translate(0%, 30%);
+            transform: translate(0%, 30%);
+  }
+  .documentsDetailsListFirst {
+    -webkit-transform: translate(0%, 30%);
+            transform: translate(0%, 30%);
+  }
+  .documentsDetailsListSecond {
+    -webkit-transform: translate(0%, 30%);
+            transform: translate(0%, 30%);
+  }
+  .priceContentLow {
+    -webkit-transform: translate(0%, 30%);
+            transform: translate(0%, 30%);
+  }
+  .priceContentMedium {
+    -webkit-transform: translate(0%, 30%);
+            transform: translate(0%, 30%);
+  }
+  .priceContentHigh {
+    -webkit-transform: translate(0%, 30%);
+            transform: translate(0%, 30%);
+  }
+  .SendEmailForm {
+    -webkit-transform: translate(0%, 30%);
+            transform: translate(0%, 30%);
+  }
+}
 ._active {
   -webkit-transform: translate(0%, 0%);
           transform: translate(0%, 0%);

@@ -78,6 +78,36 @@
     transition: all 1s ease 0s;
 }
 
+@media screen and (max-width: 660px) {
+    .functionContentCards1 {
+        transform: translate(0%, 30%);
+    }
+    .functionContentCards2 {
+        transform: translate(0%, 30%);
+    }
+    .functionContentCards3 {
+        transform: translate(0%, 30%);
+    }
+    .documentsDetailsListFirst {
+        transform: translate(0%, 30%);
+    }
+    .documentsDetailsListSecond {
+        transform: translate(0%, 30%);
+    }
+    .priceContentLow {
+        transform: translate(0%, 30%);
+    }
+    .priceContentMedium {
+        transform: translate(0%, 30%);
+    }
+    .priceContentHigh {
+        transform: translate(0%, 30%);
+    }
+    .SendEmailForm {
+        transform: translate(0%, 30%);
+    }
+}
+
 ._active {
     transform: translate(0%, 0%);
     opacity: 1;
