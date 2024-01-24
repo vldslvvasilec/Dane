@@ -138,9 +138,9 @@ a {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .drop-down-btn {
@@ -155,24 +155,28 @@ a {
           align-items: center;
   position: relative;
   cursor: pointer;
+  width: calc(var(--index) * 5);
 }
 
 #LangArrow {
   width: calc(var(--index));
   fill: var(--colorBlue);
+  fill: black;
   -webkit-transition: 0.5s;
   transition: 0.5s;
+  width: 20%;
 }
 
 #LangBtnImg,
 .language-img {
   width: calc(var(--index) * 1.5);
+  width: 40%;
   border-radius: calc(var(--index) * 0.2);
 }
 
 #LangBtnTitle,
 .ListLanguage-title {
-  width: calc(var(--index));
+  width: 30%;
   font-family: var(--fontPoppins);
   font-size: calc(var(--index) * 0.8);
   color: var(--colorBlue);
@@ -182,12 +186,13 @@ a {
 
 .language-menu {
   position: absolute;
-  margin-top: calc(var(--index) * 4);
+  margin-top: calc(var(--index) * 6);
   display: none;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  width: 100%;
 }
 
 .language-item {
@@ -197,10 +202,14 @@ a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
   cursor: pointer;
+  margin-left: calc(var(--index) * -0.3);
 }
 .language-item:last-child {
-  margin-top: calc(var(--index) * 0.3);
+  margin-top: calc(var(--index));
 }
 
 .headerNavMenu {
@@ -1096,8 +1105,8 @@ a {
 
 @media screen and (max-width: 660px) {
   .functionContentCards1 {
-    -webkit-transform: translate(0%, 30%);
-            transform: translate(0%, 30%);
+    -webkit-transform: translate(0%, 0%);
+            transform: translate(0%, 0%);
   }
   .functionContentCards2 {
     -webkit-transform: translate(0%, 30%);
@@ -1148,6 +1157,19 @@ a {
   }
 }
 @media screen and (max-width: 660px) {
+  .drop-down-btn {
+    width: calc(var(--index) * 7);
+  }
+  .language-menu {
+    margin-top: calc(var(--index) * 10);
+  }
+  #LangBtnTitle,
+  .ListLanguage-title {
+    font-size: calc(var(--index) * 1.1);
+  }
+  .language-item:last-child {
+    margin-top: calc(var(--index) * 2);
+  }
   .priceContentList {
     font-size: calc(var(--index) * 0.8);
   }

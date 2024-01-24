@@ -4,17 +4,44 @@ const LangMenu = document.querySelector(".language-menu");
 const Lang = document.querySelector(".langBar");
 const LangArrow = document.querySelector("#LangArrow");
 
-LangBtn.addEventListener("mouseenter", () => {
+// let timeout;
+
+// const handleHover = () => {
+//     clearTimeout(timeout);
+//     LangMenu.style.display = "flex";
+//     LangArrow.style.transform = "rotate(180deg)";
+// };
+
+// const handleMouseOut = () => {
+//     timeout = setTimeout(() => {
+//         LangMenu.style.display = "none";
+//         LangArrow.style.transform = "rotate(0deg)";
+//     }, 1500);
+// };
+
+// LangBtn.addEventListener("mouseover", handleHover);
+// LangMenu.addEventListener("mouseover", handleHover);
+// Lang.addEventListener("mouseout", handleMouseOut);
+// LangMenu.addEventListener("mouseout", handleMouseOut);
+
+let timeout;
+
+const LangMenuOpen = () => {
     LangMenu.style.display = "flex";
     LangArrow.style.transform = "rotate(180deg)";
-});
-
-Lang.addEventListener("mouseleave", () => {
-    setTimeout(() => {
+    clearTimeout(timeout);
+};
+const LangMenuClose = () => {
+    timeout = setTimeout(() => {
         LangMenu.style.display = "none";
         LangArrow.style.transform = "rotate(0deg)";
     }, 1500);
-});
+};
+
+LangBtn.addEventListener("mouseover", LangMenuOpen);
+LangMenu.addEventListener("mouseover", LangMenuOpen);
+LangBtn.addEventListener("mouseout", LangMenuClose);
+LangMenu.addEventListener("mouseout", LangMenuClose);
 
 // Словарь
 const Title = {
