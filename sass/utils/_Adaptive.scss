@@ -18,24 +18,37 @@
     .drop-down-btn {
         width: calc(var(--index) * 7);
     }
+
     .language-menu {
         margin-top: calc(var(--index) * 10);
     }
+
     #LangBtnTitle,
     .ListLanguage-title {
         font-size: calc(var(--index) * 1.1);
     }
+
     .language-item {
         &:last-child {
             margin-top: calc(var(--index) * 2);
         }
     }
+
     .priceContentList {
         font-size: calc(var(--index) * 0.8);
     }
 
     .priceContentItems {
         padding: calc(var(--index) * 0.2) 0;
+    }
+
+    .EmailButtons {
+        width: 80%;
+    }
+
+    .emailButtonsSubmitBut,
+    .emailButtonsCencelBut {
+        width: 45%;
     }
 }
 
