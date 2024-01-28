@@ -18,31 +18,28 @@
 
     input {
         appearance: none;
-        border: calc(var(--index)*0.1) solid var(--cololBlack);
-        border-radius: calc(var(--index)*0.2);
+        border: calc(var(--index) * 0.1) solid var(--cololBlack);
+        border-radius: calc(var(--index) * 0.2);
         background-color: var(--colorWhite);
     }
 
     input[type="checkbox"] {
         appearance: none;
-        border: calc(var(--index)*0.1) solid var(--cololBlack);
-        border-radius: calc(var(--index)*0.2);
+        border: calc(var(--index) * 0.1) solid var(--cololBlack);
+        border-radius: calc(var(--index) * 0.2);
         cursor: pointer;
 
         &:checked {
             &::before {
-                content: '\2713';
+                content: "\2713";
                 display: flex;
                 justify-content: center;
                 align-items: center;
                 text-align: center;
                 font-weight: 900;
                 color: color(var(--colorRed));
-                color: red;
             }
         }
-
-
     }
 }
 
@@ -74,28 +71,11 @@
     flex-direction: column;
     align-items: center;
     margin: 1%;
-    // overflow-y: auto;
     position: relative;
-
-    // &::-webkit-scrollbar {
-    //     width: calc(var(--index));
-    //     border-radius: calc(var(--index));
-    // }
-
-    // &::-webkit-scrollbar-thumb {
-    //     background-color: rgba(0, 0, 0, 0.5);
-    //     border-radius: calc(var(--index));
-    // }
-
-    // &::-webkit-scrollbar-track {
-    //     background-color: transparent;
-    //     border-radius: calc(var(--index));
-    // }
 }
 
 .formInfoWrap {
     width: 100%;
-    // height: 100%;
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
@@ -132,7 +112,7 @@
     position: absolute;
     right: 0;
     top: 0;
-    margin-right: calc(var(--index) * 0.5);
+    margin-right: calc(var(--index) * 0.7);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -152,11 +132,11 @@
 .progButtonBlock {
     display: flex;
     flex-direction: column;
-    margin-top: calc(var(--index)*0.3);
+    margin-top: calc(var(--index) * 0.3);
     position: sticky;
     bottom: 0;
-    margin-bottom: calc(var(--index)*1.2);
-    margin-top: calc(var(--index)*0.5);
+    margin-bottom: calc(var(--index) * 1.2);
+    margin-top: calc(var(--index) * 0.5);
 }
 
 .buttonsSubmit {
