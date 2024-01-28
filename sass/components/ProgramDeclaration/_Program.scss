@@ -46,9 +46,9 @@
 .ProgramDecloration {
     position: fixed;
     top: 5%;
-    left: 5%;
-    right: 5%;
-    width: 90%;
+    left: 2%;
+    right: 2%;
+    // width: 91%;
     height: 90vh;
     background-color: var(--colorDane);
     opacity: 1;
@@ -56,6 +56,7 @@
     border-radius: calc(var(--index));
     display: flex;
     justify-content: center;
+    padding: calc(var(--index));
 }
 
 .ProgTittle {

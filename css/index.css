@@ -1479,9 +1479,8 @@ a {
 .ProgramDecloration {
   position: fixed;
   top: 5%;
-  left: 5%;
-  right: 5%;
-  width: 90%;
+  left: 2%;
+  right: 2%;
   height: 90vh;
   background-color: var(--colorDane);
   opacity: 1;
@@ -1493,6 +1492,7 @@ a {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  padding: calc(var(--index));
 }
 
 .ProgTittle {
