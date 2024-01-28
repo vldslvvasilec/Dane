@@ -155,4 +155,19 @@
     .addChildButton {
         width: 50%;
     }
+
+    .workTaxInput,
+    .workRoughInput {
+        max-width: 70%;
+    }
+
+    .workRoughSymbolKC,
+    .workTaxSymbolKC {
+        margin-right: calc(var(--index)*2.2);
+    }
+
+    .workTax {
+        margin-left: calc(var(--index)*2);
+    }
+
 }

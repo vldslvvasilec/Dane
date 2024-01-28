@@ -1061,6 +1061,7 @@ a {
       -ms-flex-direction: column;
           flex-direction: column;
   position: relative;
+  max-width: 40%;
 }
 
 .workTax {
@@ -1472,8 +1473,7 @@ a {
           align-items: center;
   text-align: center;
   font-weight: 900;
-  color: color(var(--colorRed));
-  color: red;
+  color: var(--colorRed);
 }
 
 .ProgramDecloration {
@@ -1568,7 +1568,7 @@ a {
   position: absolute;
   right: 0;
   top: 0;
-  margin-right: calc(var(--index) * 0.5);
+  margin-right: calc(var(--index) * 0.7);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1995,6 +1995,17 @@ a {
   .addWifeButton,
   .addChildButton {
     width: 50%;
+  }
+  .workTaxInput,
+  .workRoughInput {
+    max-width: 70%;
+  }
+  .workRoughSymbolKC,
+  .workTaxSymbolKC {
+    margin-right: calc(var(--index) * 2.2);
+  }
+  .workTax {
+    margin-left: calc(var(--index) * 2);
   }
 }
 .texts {
