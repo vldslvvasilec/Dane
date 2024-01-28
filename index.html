@@ -5,9 +5,10 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link
             href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-            rel="stylesheet" />
-        <link rel="stylesheet" href="./css/index.min.css" />
+            rel="stylesheet" />
         <title>Document</title>
+      <script type="module" crossorigin src="./assets/index-URC0-GQ4.js"></script>
+      <link rel="stylesheet" crossorigin href="./assets/index-wsUwSWhm.css">
     </head>
     <body>
         <div id="root">
@@ -39,7 +40,7 @@
                         <form
                             action="/submit"
                             id="ProgCalcFree"
-                            onsubmit="buttonSubmitForm(event)">
+                            onsubmit="submitForm(event)">
                             <section class="formInfoWrap">
                                 <section class="worksProgCalcFreeWrap">
                                     <section
@@ -114,8 +115,8 @@
                 <div class="Header">
                     <section class="HeaderTitleWrap">
                         <section class="HeaderBg">
-                            <img src="./assets/icons/CZ.png" class="Img" />
-                            <img src="./assets/icons/UA.png" class="Img" />
+                            <img src="./icons/CZ.png" class="Img" />
+                            <img src="data:image/png;base64,AAAAHGZ0eXBhdmlmAAAAAGF2aWZtaWYxbWlhZgAAAOptZXRhAAAAAAAAACFoZGxyAAAAAAAAAABwaWN0AAAAAAAAAAAAAAAAAAAAAA5waXRtAAAAAAABAAAAImlsb2MAAAAAREAAAQABAAAAAAEOAAEAAAAAAAAA0QAAACNpaW5mAAAAAAABAAAAFWluZmUCAAAAAAEAAGF2MDEAAAAAamlwcnAAAABLaXBjbwAAABNjb2xybmNseAACAAIABoAAAAAMYXYxQ4EEDAAAAAAUaXNwZQAAAAAAAAM6AAABtAAAABBwaXhpAAAAAAMICAgAAAAXaXBtYQAAAAAAAAABAAEEgYIDhAAAANltZGF0EgAKChkmM52bBAgIGhAywAERQAEEEEFAtF7zfPIsHE8CUJlaV4s0Q3BOKLBTQ3pVGLCL+dMz/v/xrzBl2B3QULRqMzGsKIA7R7atRkP8ytmZ/KFBQcPrxUbwF00WmgxvXE9pfSGvrWh50JFYf6ipGFxigPQFXe6kLUsCpjfXIU2e7LBVy0Top/2wIX7VQjwBUAl4+ymRIM/XRCJwK3JlySmOMBmqswpMBZYcNd0S75WQ3AQdTStJauKaCWc9x3uacoxLvPKhLhlALcg5A6OGOYA=" class="Img" />
                         </section>
                         <section class="_animItems HeaderTitle">
                             <p class="lsg_header_title">Налоговая декларация</p>
@@ -206,7 +207,7 @@
                                                 d="M480-345 240-585l56-56 184 184 184-184 56 56-240 240Z" />
                                         </svg>
                                         <img
-                                            src="./assets/icons/CZ.png"
+                                            src="./icons/CZ.png"
                                             alt="CZ"
                                             id="LangBtnImg"
                                             class="language-img" />
@@ -221,7 +222,7 @@
                                             class="language-item"
                                             data-lang="cz">
                                             <img
-                                                src="./assets/icons/CZ.png"
+                                                src="./icons/CZ.png"
                                                 alt="CZ"
                                                 class="language-img" />
                                             <h3 class="ListLanguage-title">
@@ -232,7 +233,7 @@
                                             class="language-item"
                                             data-lang="ua">
                                             <img
-                                                src="./assets/icons/UA.png"
+                                                src="data:image/png;base64,AAAAHGZ0eXBhdmlmAAAAAGF2aWZtaWYxbWlhZgAAAOptZXRhAAAAAAAAACFoZGxyAAAAAAAAAABwaWN0AAAAAAAAAAAAAAAAAAAAAA5waXRtAAAAAAABAAAAImlsb2MAAAAAREAAAQABAAAAAAEOAAEAAAAAAAAA0QAAACNpaW5mAAAAAAABAAAAFWluZmUCAAAAAAEAAGF2MDEAAAAAamlwcnAAAABLaXBjbwAAABNjb2xybmNseAACAAIABoAAAAAMYXYxQ4EEDAAAAAAUaXNwZQAAAAAAAAM6AAABtAAAABBwaXhpAAAAAAMICAgAAAAXaXBtYQAAAAAAAAABAAEEgYIDhAAAANltZGF0EgAKChkmM52bBAgIGhAywAERQAEEEEFAtF7zfPIsHE8CUJlaV4s0Q3BOKLBTQ3pVGLCL+dMz/v/xrzBl2B3QULRqMzGsKIA7R7atRkP8ytmZ/KFBQcPrxUbwF00WmgxvXE9pfSGvrWh50JFYf6ipGFxigPQFXe6kLUsCpjfXIU2e7LBVy0Top/2wIX7VQjwBUAl4+ymRIM/XRCJwK3JlySmOMBmqswpMBZYcNd0S75WQ3AQdTStJauKaCWc9x3uacoxLvPKhLhlALcg5A6OGOYA="
                                                 alt="UA"
                                                 class="language-img" />
                                             <h3 class="ListLanguage-title">
@@ -254,7 +255,7 @@
                             ><span class="lsgMainGeneralTextContent"></span>
                         </section>
                         <section class="mainGeneralImg">
-                            <img src="./assets//images/mainTitle.jpg" />
+                            <img src="./assets/mainTitle-W20mRIj4.jpg" />
                         </section>
                     </section>
                     <section id="FunctionPage" class="functions">
@@ -881,12 +882,7 @@
             </footer>
         </div>
         <script src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
-        <script type="module" src="./js/dictionary.js"></script>
-        <script src="./js/sendEmail.js"></script>
-        <script src="./js/header.js"></script>
-        <script src="./js/documentsMenu.js"></script>
-        <script src="./js/styleText.js"></script>
-        <script type="module" src="./js/ProgramElem.js"></script>
-        <script type="module" src="./js/lang.js"></script>
+        <script src="./app.js"></script>
+        <!-- <script src="./js/sendInfoToServer.js"></script> -->
     </body>
 </html>
