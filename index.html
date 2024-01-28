@@ -11,6 +11,105 @@
     </head>
     <body>
         <div id="root">
+            <div class="texts">
+                <span class="workRoughLabel"></span>
+                <span class="workTaxLabel"></span>
+                <span class="wifeMonthLab"></span
+                ><span class="wifeZTPLb"></span>
+                <span class="childObjTittleBlock"></span>
+                <span class="childMonthLab"></span
+                ><span class="childZTPLb"></span>
+            </div>
+            <div id="ProgramDeclorationWrap" class="ProgramDeclorationWrap">
+                <section id="ProgramDecloration" class="ProgramDecloration">
+                    <section class="ProgBazeInfo">
+                        <section class="ProgExit">
+                            <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                height="24"
+                                viewBox="0 -960 960 960"
+                                width="24">
+                                <path
+                                    d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z" />
+                            </svg>
+                        </section>
+                        <p class="ProgTittle">
+                            Рассчитайте Вашу деклорацию бесплатно
+                        </p>
+                        <form
+                            action="/submit"
+                            id="ProgCalcFree"
+                            onsubmit="buttonSubmitForm(event)">
+                            <section class="formInfoWrap">
+                                <section class="worksProgCalcFreeWrap">
+                                    <section
+                                        id="worksProgCalcFree"
+                                        class="worksProgCalcFree"></section>
+                                </section>
+                                <section
+                                    id="wifeProgCalcFreeWrap"
+                                    class="wifeProgCalcFreeWrap">
+                                    <section
+                                        id="wifeProgCalcFree"
+                                        class="wifeProgCalcFree"></section>
+                                </section>
+                                <section
+                                    id="childProgCalcFreeWrap"
+                                    class="childProgCalcFreeWrap">
+                                    <section
+                                        id="childProgCalcFree"
+                                        class="childProgCalcFree"></section>
+                                </section>
+                            </section>
+                            <section class="progButtonBlock">
+                                <section
+                                    id="buttonsSubmit"
+                                    class="buttonsSubmit">
+                                    <p class="ProgCalcFreeResult">
+                                        <span class="progCalcFreeResultTittle"
+                                            >Ваш возврат налогов:</span
+                                        ><span class="progCalcFreeResultResult"
+                                            >10000kč</span
+                                        >
+                                    </p>
+                                    <section class="progButtonsButtons">
+                                        <button
+                                            type="submit"
+                                            form="ProgCalcFree"
+                                            id="submitProgCalcFree">
+                                            <svg
+                                                xmlns="http://www.w3.org/2000/svg"
+                                                height="24"
+                                                viewBox="0 -960 960 960"
+                                                width="24">
+                                                <path
+                                                    d="M320-240h60v-80h80v-60h-80v-80h-60v80h-80v60h80v80Zm200-30h200v-60H520v60Zm0-100h200v-60H520v60Zm44-152 56-56 56 56 42-42-56-58 56-56-42-42-56 56-56-56-42 42 56 56-56 58 42 42Zm-314-70h200v-60H250v60Zm-50 472q-33 0-56.5-23.5T120-200v-560q0-33 23.5-56.5T200-840h560q33 0 56.5 23.5T840-760v560q0 33-23.5 56.5T760-120H200Zm0-80h560v-560H200v560Zm0-560v560-560Z" />
+                                            </svg>
+                                            <span class="submitProgCalcFreeSp"
+                                                >Расчитать бесплатно</span
+                                            >
+                                        </button>
+                                        <section
+                                            id="ProgButtonPay"
+                                            class="ProgButtonPay">
+                                            <svg
+                                                xmlns="http://www.w3.org/2000/svg"
+                                                height="24"
+                                                viewBox="0 -960 960 960"
+                                                width="24">
+                                                <path
+                                                    d="M880-720v480q0 33-23.5 56.5T800-160H160q-33 0-56.5-23.5T80-240v-480q0-33 23.5-56.5T160-800h640q33 0 56.5 23.5T880-720Zm-720 80h640v-80H160v80Zm0 160v240h640v-240H160Zm0 240v-480 480Z" /></svg
+                                            ><span class="progButtonPay"
+                                                >Оплатить и перейти дальше</span
+                                            >
+                                        </section>
+                                    </section>
+                                </section>
+                            </section>
+                        </form>
+                    </section>
+                </section>
+            </div>
             <header>
                 <div class="Header">
                     <section class="HeaderTitleWrap">
@@ -78,8 +177,13 @@
                                             >
                                         </li>
                                         <li class="headerNavMenuContacts">
-                                            <a href="#ContactsPage" class="submenu-items headerNavMenuContactsSp" onclick="scrollToAnchor(event)">Контакты</a>
-                                        </li>                                        
+                                            <a
+                                                href="#ContactsPage"
+                                                class="submenu-items headerNavMenuContactsSp"
+                                                onclick="scrollToAnchor(event)"
+                                                >Контакты</a
+                                            >
+                                        </li>
                                         <li class="headerNavMenuOrder">
                                             <a
                                                 href="#CalculationTegPage"
@@ -154,7 +258,9 @@
                         </section>
                     </section>
                     <section id="FunctionPage" class="functions">
-                        <p class="_animItems lsgFunctionsTitle">Как это работает</p>
+                        <p class="_animItems lsgFunctionsTitle">
+                            Как это работает
+                        </p>
                         <section class="functionsContent">
                             <section class="_animItems functionContentCards1">
                                 <section class="functionContentCardsImg">
@@ -218,7 +324,7 @@
                             </section>
                         </section>
                     </section>
-                    <section class="_animItems calculationTeg">
+                    <section class="_animItems calculationTeg ProgOpenBut">
                         <span class="calculationTegText"
                             >Перейти к расчету</span
                         >
@@ -381,7 +487,6 @@
                                     рассчитанного налога:
                                 </p>
                                 <li class="documentsDetailsItem">
-                                    
                                     <span
                                         class="documentsDetailsTaxpayer"
                                         onclick="toggleDocumentMenu('.documentsDetailsDocumentsTaxpayer')"
@@ -480,22 +585,6 @@
                                 </li>
                                 <li class="documentsDetailsItem">
                                     <span
-                                        class="documentsDetailsStudent"
-                                        onclick="toggleDocumentMenu('.documentsDetailsDocumentsStudent')"
-                                        >Студенту</span
-                                    >
-                                    <ul
-                                        class="documentsDetailsDocumentsStudent">
-                                        <li>
-                                            <span
-                                                class="documentsDetailsDocumentsStudent1"
-                                                >подтверждение обучения</span
-                                            >
-                                        </li>
-                                    </ul>
-                                </li>
-                                <li class="documentsDetailsItem">
-                                    <span
                                         class="documentsDetailsSchool"
                                         onclick="toggleDocumentMenu('.documentsDetailsDocumentsSchool')"
                                         >За школьные сборы</span
@@ -544,109 +633,260 @@
                             </ul>
                         </section>
                     </section>
-                    <section id="CalculationTegPage" class="_animItems calculationTeg">
+                    <section
+                        id="CalculationTegPage"
+                        class="_animItems calculationTeg ProgOpenBut">
                         <span class="calculationTegText1"
                             >Перейти к расчету</span
                         >
                     </section>
                     <section id="PricePage" class="price">
-                        <p class="_animItems lsgPriceTitle">Стоимость наших услуг</p>
+                        <p class="_animItems lsgPriceTitle">
+                            Стоимость наших услуг
+                        </p>
                         <section class="priceContent">
-                            <section class="_animItems _anim-no-hide priceContentLow">
+                            <section
+                                class="_animItems _anim-no-hide priceContentLow">
                                 <section class="priceSVG">
-                                <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path d="m296-345-56-56 240-240 240 240-56 56-184-183-184 183Z"/></svg>
+                                    <svg
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        height="24"
+                                        viewBox="0 -960 960 960"
+                                        width="24">
+                                        <path
+                                            d="m296-345-56-56 240-240 240 240-56 56-184-183-184 183Z" />
+                                    </svg>
                                 </section>
-                                <p class="priceContentCont">
+                                <section class="priceContentCont">
                                     <ul class="priceContentList">
-                                        <li class="priceContentItems"><span class="PriceContentTextTaxpayer"></span></li>
+                                        <li class="priceContentItems">
+                                            <span
+                                                class="PriceContentTextTaxpayer"></span>
+                                        </li>
                                     </ul>
-                                    
-                                </p>
-                                <p class="priceCena">350kč</p>
+                                </section>
+                                <section class="priceCena ProgOpenBut">
+                                    350kč
+                                </section>
                             </section>
-                            <section class="_animItems _anim-no-hide priceContentMedium">
+                            <section
+                                class="_animItems _anim-no-hide priceContentMedium">
                                 <section class="priceSVG">
-                                <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path d="m296-224-56-56 240-240 240 240-56 56-184-183-184 183Zm0-240-56-56 240-240 240 240-56 56-184-183-184 183Z"/></svg></section>
-                                <p class="priceContentCont">
+                                    <svg
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        height="24"
+                                        viewBox="0 -960 960 960"
+                                        width="24">
+                                        <path
+                                            d="m296-224-56-56 240-240 240 240-56 56-184-183-184 183Zm0-240-56-56 240-240 240 240-56 56-184-183-184 183Z" />
+                                    </svg>
+                                </section>
+                                <section class="priceContentCont">
                                     <ul class="priceContentList">
-                                        <li class="priceContentItems"><span class="PriceContentTextWife">Жене/мужу</span></li>
-                                        <li class="priceContentItems"><span class="PriceContentTextDisWife">Для жены/мужа - держатель ZTP/P</span></li>
-                                        <li class="priceContentItems"><span class="PriceContentTextDisPensioner">Для пенсионеров-инвалидов</span></li>
-                                        <li class="priceContentItems"><span class="PriceContentTextDisabled">Для владельцев карт ZTP/P</span></li>
-                                        <li class="priceContentItems"><span class="PriceContentTextStudent">Студенту</span></li>
-                                        <li class="priceContentItems"><span class="PriceContentTextSchool">За школьные сборы</span></li>
-                                        <li class="priceContentItems"><span class="PriceContentTextChildren">Льготы для детей</span></li>
+                                        <li class="priceContentItems">
+                                            <span class="PriceContentTextWife"
+                                                >Жене/мужу</span
+                                            >
+                                        </li>
+                                        <li class="priceContentItems">
+                                            <span
+                                                class="PriceContentTextDisWife"
+                                                >Для жены/мужа - держатель
+                                                ZTP/P</span
+                                            >
+                                        </li>
+                                        <li class="priceContentItems">
+                                            <span
+                                                class="PriceContentTextDisPensioner"
+                                                >Для пенсионеров-инвалидов</span
+                                            >
+                                        </li>
+                                        <li class="priceContentItems">
+                                            <span
+                                                class="PriceContentTextDisabled"
+                                                >Для владельцев карт ZTP/P</span
+                                            >
+                                        </li>
+                                        <li class="priceContentItems">
+                                            <span
+                                                class="PriceContentTextStudent"
+                                                >Студенту</span
+                                            >
+                                        </li>
+                                        <li class="priceContentItems">
+                                            <span class="PriceContentTextSchool"
+                                                >За школьные сборы</span
+                                            >
+                                        </li>
+                                        <li class="priceContentItems">
+                                            <span
+                                                class="PriceContentTextChildren"
+                                                >Льготы для детей</span
+                                            >
+                                        </li>
                                     </ul>
-                                    
-                                </p>
-                                <p class="priceCena">500kč</p>
+                                </section>
+                                <section class="priceCena ProgOpenBut">
+                                    500kč
+                                </section>
                             </section>
-                            <section class="_animItems _anim-no-hide priceContentHigh">
+                            <section
+                                class="_animItems _anim-no-hide priceContentHigh">
                                 <section class="priceSVG">
-                                <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path d="m296-105-56-56 240-240 240 240-56 56-184-183-184 183Zm0-240-56-56 240-240 240 240-56 56-184-183-184 183Zm0-240-56-56 240-240 240 240-56 56-184-183-184 183Z"/></svg></section>
-                                <p class="priceContentCont">
+                                    <svg
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        height="24"
+                                        viewBox="0 -960 960 960"
+                                        width="24">
+                                        <path
+                                            d="m296-105-56-56 240-240 240 240-56 56-184-183-184 183Zm0-240-56-56 240-240 240 240-56 56-184-183-184 183Zm0-240-56-56 240-240 240 240-56 56-184-183-184 183Z" />
+                                    </svg>
+                                </section>
+                                <section class="priceContentCont">
                                     <ul class="priceContentList">
-                                        <li class="priceContentItems"><span class="PriceContentTextMartgage">Проценты по ипотеке</span></li>
-                                        <li class="priceContentItems"><span class="PriceContentTextInsurance">Страхование жизни</span></li>
-                                        <li class="priceContentItems"><span class="PriceContentTextPension">Экономия на пенсию</span></li>
-                                        <li class="priceContentItems"><span class="PriceContentTextGifts">Дары</span></li>
-                                        <li class="priceContentItems"><span class="PriceContentTextUnion">Взносы Союза</span></li>
-                                        <li class="priceContentItems"><span class="PriceContentTextExams">Оплата экзаменов, подтверждающих
-                                        результаты дальнейшего образования</span></li>
+                                        <li class="priceContentItems">
+                                            <span
+                                                class="PriceContentTextMartgage"
+                                                >Проценты по ипотеке</span
+                                            >
+                                        </li>
+                                        <li class="priceContentItems">
+                                            <span
+                                                class="PriceContentTextInsurance"
+                                                >Страхование жизни</span
+                                            >
+                                        </li>
+                                        <li class="priceContentItems">
+                                            <span
+                                                class="PriceContentTextPension"
+                                                >Экономия на пенсию</span
+                                            >
+                                        </li>
+                                        <li class="priceContentItems">
+                                            <span class="PriceContentTextGifts"
+                                                >Дары</span
+                                            >
+                                        </li>
+                                        <li class="priceContentItems">
+                                            <span class="PriceContentTextUnion"
+                                                >Взносы Союза</span
+                                            >
+                                        </li>
+                                        <li class="priceContentItems">
+                                            <span class="PriceContentTextExams"
+                                                >Оплата экзаменов,
+                                                подтверждающих результаты
+                                                дальнейшего образования</span
+                                            >
+                                        </li>
                                     </ul>
-                                    
-                                </p>
-                                <p class="priceCena">650kč</p>
+                                </section>
+                                <section class="priceCena ProgOpenBut">
+                                    650kč
+                                </section>
                             </section>
                         </section>
                     </section>
                     <div id="ContactsPage" class="contacts">
-                        <p class="_animItems lsgContactsTitle">Если у вас есть вопросы, можете мне их задать, заполнив эту форму</p>
-                <form class="_animItems SendEmailForm">
-                    <label for="Name" class="labelName"
-                        ><span class="SendEmailName">Ваше имя</span></label
-                    ><input
-                        type="text"
-                        id="Name"
-                        name="name"
-                        class="name"
-                        required />
-                    <label for="email" class="labelEmail"
-                        ><span class="SendEmailEmail">Ваш Email</span></label
-                    ><input
-                        type="email"
-                        name="email"
-                        id="email"
-                        class="email"
-                        required /><label for="message" class="labelMessage"
-                        ><span class="SendEmailText"
-                            >Текст сообщения</span
-                        ></label
-                    ><textarea
-                        name="message"
-                        id="message"
-                        class="message"
-                        cols="50"
-                        rows="8"
-                        style="resize: none"
-                        required></textarea>
-                    <section class="EmailButtons">
-                        <button class="emailButtonsSubmitBut" type="submit">
-                            <span class="emailButtonsSubmit">Отправить</span>
-                        </button>
-                        <button class="emailButtonsCencelBut" type="button">
-                            <span class="SendEmailCancel">Отмена</span>
-                        </button>
-                    </section>
-                </form>
-            </div>
+                        <p class="_animItems lsgContactsTitle">
+                            Если у вас есть вопросы, можете мне их задать,
+                            заполнив эту форму
+                        </p>
+                        <form class="_animItems SendEmailForm">
+                            <label for="Name" class="labelName"
+                                ><span class="SendEmailName"
+                                    >Ваше имя</span
+                                ></label
+                            ><input
+                                type="text"
+                                id="Name"
+                                name="name"
+                                class="name"
+                                required />
+                            <label for="email" class="labelEmail"
+                                ><span class="SendEmailEmail"
+                                    >Ваш Email</span
+                                ></label
+                            ><input
+                                type="email"
+                                name="email"
+                                id="email"
+                                class="email"
+                                required /><label
+                                for="message"
+                                class="labelMessage"
+                                ><span class="SendEmailText"
+                                    >Текст сообщения</span
+                                ></label
+                            ><textarea
+                                name="message"
+                                id="message"
+                                class="message"
+                                cols="50"
+                                rows="8"
+                                style="resize: none"
+                                required></textarea>
+                            <section class="EmailButtons">
+                                <button
+                                    class="emailButtonsSubmitBut"
+                                    type="submit">
+                                    <span class="emailButtonsSubmit"
+                                        >Отправить</span
+                                    >
+                                </button>
+                                <button
+                                    class="emailButtonsCencelBut"
+                                    type="button">
+                                    <span class="SendEmailCancel">Отмена</span>
+                                </button>
+                            </section>
+                        </form>
+                    </div>
                 </section>
             </main>
-            <footer class="Footer"><section class="footerContent"><a href="#HomePage" class="_animItems footerItems footerItemsHome" onclick="scrollToAnchor(event)">Главная</a><a href="#FunctionPage" class="_animItems footerItems footerItemsFunction" onclick="scrollToAnchor(event)">Функциональность</a><a href="#DocumentsPage" class="_animItems footerItems footerItemsDocuments" onclick="scrollToAnchor(event)">Документы</a><a href="#PricePage" class="_animItems footerItems footerItemsPrice" onclick="scrollToAnchor(event)">Цены</a><a href="#ContactsPage" class="_animItems footerItems footerItemsContacts" onclick="scrollToAnchor(event)">Контакты</a><a href="#CalculationTegPage" class="_animItems footerItems footerItemsCalculation" onclick="scrollToAnchor(event)">Заказ</a></section></footer>
+            <footer class="Footer">
+                <section class="footerContent">
+                    <a
+                        href="#HomePage"
+                        class="_animItems footerItems footerItemsHome"
+                        onclick="scrollToAnchor(event)"
+                        >Главная</a
+                    ><a
+                        href="#FunctionPage"
+                        class="_animItems footerItems footerItemsFunction"
+                        onclick="scrollToAnchor(event)"
+                        >Функциональность</a
+                    ><a
+                        href="#DocumentsPage"
+                        class="_animItems footerItems footerItemsDocuments"
+                        onclick="scrollToAnchor(event)"
+                        >Документы</a
+                    ><a
+                        href="#PricePage"
+                        class="_animItems footerItems footerItemsPrice"
+                        onclick="scrollToAnchor(event)"
+                        >Цены</a
+                    ><a
+                        href="#ContactsPage"
+                        class="_animItems footerItems footerItemsContacts"
+                        onclick="scrollToAnchor(event)"
+                        >Контакты</a
+                    ><a
+                        href="#CalculationTegPage"
+                        class="_animItems footerItems footerItemsCalculation"
+                        onclick="scrollToAnchor(event)"
+                        >Заказ</a
+                    >
+                </section>
+            </footer>
         </div>
-        <script src="./js/lang.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
+        <script type="module" src="./js/dictionary.js"></script>
+        <script src="./js/sendEmail.js"></script>
         <script src="./js/header.js"></script>
         <script src="./js/documentsMenu.js"></script>
         <script src="./js/styleText.js"></script>
+        <script type="module" src="./js/ProgramElem.js"></script>
+        <script type="module" src="./js/lang.js"></script>
     </body>
 </html>

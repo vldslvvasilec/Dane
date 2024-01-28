@@ -4,5 +4,12 @@
 @import "./components/Header/Header";
 @import "./components/Main/Main";
 @import "./components/Footer/Footer";
+@import "./components/ProgramDeclaration/Program";
 @import "./utils/AnimText";
 @import "./utils/Adaptive";
+
+.texts {
+    visibility: hidden;
+    opacity: 0;
+    display: none;
+}

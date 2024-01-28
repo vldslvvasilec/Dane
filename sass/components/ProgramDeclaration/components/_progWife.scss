@@ -1,0 +1,89 @@
+.wifeProgCalcFreeWrap {
+    width: 96%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: calc(var(--index) * 0.1) solid var(--cololBlack);
+    padding: calc(var(--index) * 0.5);
+    border-radius: calc(var(--index));
+    margin-top: calc(var(--index) * 0.5);
+}
+
+.wifeProgCalcFree {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+}
+
+.wifeObjTittle {
+    font-size: calc(var(--index));
+    font-weight: 600;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-bottom: calc(var(--index));
+}
+
+.wifeObj {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    font-size: calc(var(--index));
+}
+
+.wifeMonth {
+    width: 50%;
+    display: flex;
+    align-items: center;
+}
+
+.wifeMonthLab {
+    width: 65%;
+}
+
+.wifeMonthInp {
+    width: 15%;
+}
+
+.wifeZTP {
+    width: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.wifeZTPInp {
+    width: calc(var(--index) * 1.2);
+    height: calc(var(--index) * 1.2);
+    margin-left: calc(var(--index));
+}
+
+.svgContainerCloseWife {
+    width: calc(var(--index) * 1.5);
+    height: calc(var(--index) * 1.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+
+    svg {
+        width: 100%;
+        height: 100%;
+        fill: var(--colorRed);
+    }
+}
+
+.addWifeButton {
+    width: 30%;
+    display: flex;
+    align-self: center;
+    justify-content: center;
+    margin-top: calc(var(--index) * 0.1);
+    padding: calc(var(--index) * 0.1);
+    font-size: calc(var(--index) * 0.8);
+    border-radius: calc(var(--index) * 0.5);
+}
